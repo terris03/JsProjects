@@ -15,6 +15,12 @@ body {
     height: 100vh;
 }
 
+#imageContainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px;
+}
+
 .profile-text {
     text-align: left;
 }
@@ -24,10 +30,40 @@ body {
 }
 
 .icons {
-
+    float: left;
 }
 
 img {
     max-width: 50%;
     float: right;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+    #profile {
+        flex-direction: row;
+    }
+
+    #imageContainer {
+        flex-direction: row;
+    }
+
+    .profile-text {
+        text-align: left;
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    .profile-image {
+        max-width: 50%;
+    }
+
+    .icons {
+        margin-top: 0;
+    }
 }

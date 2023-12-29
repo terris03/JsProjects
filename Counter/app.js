@@ -35,7 +35,6 @@ function updateHistory(result) {
     cell3.textContent = result === "Correct" ? "True" : "False";
 }
 
-
 btns.forEach(function (btn) {
     btn.addEventListener('click', function(e){
         const styles = e.currentTarget.classList;
